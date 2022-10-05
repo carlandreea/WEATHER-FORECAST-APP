@@ -1,0 +1,76 @@
+/* fonts to import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: linear-gradient(to right, cornflowerblue, skyblue);
+}
+
+main {
+    /* background-color: #333; */
+    height: 75vh;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px 50px;
+    overflow: hidden;
+    border-radius: 7%;
+    /* border-bottom: 20px solid#333; */
+}
+
+
+.card-template .inner-wrapper {
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    background: linear-gradient(to bottom, cornflowerblue, violet);
+    padding: 50px;
+    height: 60vh;
+    padding-top: 50px;
+    border-radius: 2.5%;
+}
+
+.card-template .search {
+    position: absolute;
+    /* left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+.search {
+    position: relative;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 7.5em;
+    font-family: sans-serif;
+    font: 15px;
+}
+
+.search-bar:focus {
+    width: 15em;
+    transition: width ease-in-out 500ms;
+}
+
+.search-bar:not(:hover) {
+    width: 7.5em;
+    transition: width ease-out 1000ms;
+}
+
+
+.search-button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+.search-button:hover {
+    opacity: 0.7;
+    transition: opacity ease-in-out 3ms;
+}
+
+.weather {
+    margin-top: 50px;
+    font: 20px Poppins;
+    color: #fff;
+    opacity: 0.8;
+}
